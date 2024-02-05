@@ -6,11 +6,9 @@ const app = express();
 const moviesRouter = require("./movies/movies.router");
 const theatersRouter = require("./theaters/theaters.router");
 const reviewsRouter = require("./reviews/reviews.router");
-const logger = require('./utils/logger.js');
 
 const cors = require('cors');
 app.use(cors());
-app.use(logger);
 app.use(express.json());
 
 // routes
